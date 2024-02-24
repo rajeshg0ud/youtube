@@ -21,7 +21,7 @@ const VideoCard=({info})=> {
 
       return (
         <Link to={'/watch?v='+ info.id}>
-        <div className=' py-6 m-1 sm:m-2 max-w-full sm:max-w-72 cursor-pointer hover:border-radius-none   w-[100%] sm:w-[1000px] '>
+        <div className=' py-5 m-1 sm:m-2 max-w-full sm:max-w-72 cursor-pointer hover:border-radius-none   w-[100%] sm:w-[1000px] '>
           <img
             src={thumbnails.high.url}
             className=' min-h-40 h-52 w-[346px]  md:h-[162px] md:w-80 md:max-w-72 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none '
