@@ -7,9 +7,6 @@ function SearchVideoCard({info}) {
     const {snippet, id}=info;
     const { thumbnails, title, channelTitle, description}= snippet;
 
-    useEffect(()=>{
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    },[]);
 
   return (
     <div className=' mb-8 sm:mb-0'>
