@@ -29,7 +29,7 @@ function Header(){
             <img src={menu} alt="menu" className=' h-6 mx-4 mt-2 cursor-pointer  hidden sm:block' onClick={() => menuBarSet()}/>
             
             <a href='/'  alt="YouTube Home">
-            <img src={youtube} alt="youtube-icon" className='h-[21px] ml-2 mt-[10px] cursor-pointer w-[88px]'/>
+            <img src={youtube} alt="youtube-icon" className='h-[21px] ml-2 mt-[10px] cursor-pointer w-[95px] max-w-[95px]'/>
             </a>
 
         </div>
