@@ -10,12 +10,12 @@ function SearchVideoCard({info}) {
   return (
     <div className=' mr-3 max-w-80 sm:max-w-full cursor-pointer hover:border-radius-none ' >
 
-        <Link to={id.videoId ? ('/watch?v='+ id.videoId ) : '?q=telugusongs'} className='flex m-6 flex-col sm:flex-row '>
+        <Link to={id.videoId ? ('/watch?v='+ id.videoId ) : '?q=telugusongs'} className='flex m-6 flex-col sm:flex-row items-start '>
         <img
             src={thumbnails.high.url}
             className='  min-h-40 h-44 w-80 sm:h-52 sm:w-96 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none ' 
           />
-          <div className='ml-4 '>
+          <div>
             
           <h1 className=' text-sm font-semibold line-clamp-2 sm:text-lg text-gray-700'>{title}</h1>
           <div className='flex items-center'>
