@@ -40,7 +40,7 @@ function Header(){
         <form  onSubmit={handleSubmit} className='w-9/12 sm:w-6/12 flex justify-center'>
         <input type='text' placeholder='Search' className=' w-4/5 sm:w-4/5 py-2 h-[30px] sm:h-[38px]  pl-4 border border-gray-500 rounded-l-full ' onChange={(e)=>setSearchQuery(e.target.value)}/>
          <button className=' px-1 border py-2 sm:px-4 border-gray-500 rounded-r-full  h-[30px] sm:h-[38px]  bg-gray-100 hover:bg-gray-200 self-center' >
-        <AiOutlineSearch size={25}  className='pb-1' /></button> 
+        <AiOutlineSearch size={25}  className='pb-[6px]' /></button> 
         </form>
         </div>
 
