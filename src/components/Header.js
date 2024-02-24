@@ -26,7 +26,7 @@ function Header(){
   return (
     <div className=' fixed grid grid-flow-col p-3 shadow-lg w-full z-10  bg-white top-0 left-0 items-center'>
         <div className='flex col-span-1'>
-            <img src={menu} alt="menu" className=' h-6 min-w-[25%] mx-4 mt-2 cursor-pointer  hidden sm:block' onClick={() => menuBarSet()}/>
+            <img src={menu} alt="menu" className=' h-6 mx-4 mt-2 cursor-pointer  hidden sm:block' onClick={() => menuBarSet()}/>
             
             <a href='/'  alt="YouTube Home">
             <img src={youtube} alt="youtube-icon" className=' h-5 ml-2 mt-[10px] cursor-pointer'/>
