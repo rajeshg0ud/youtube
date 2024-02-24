@@ -62,9 +62,9 @@ const getVideoInfo= async()=>{
   return (
     <div className='flex flex-col mt-4 sm:flex-row'>
     <div className=' sm:mx-7 mb-5 max-w-sm sm:max-w-5xl '>
-      <iframe src={"https://www.youtube.com/embed/" + searchParams.get("v") } frame-border="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-xl w-[99%] h-[230px] sm:w-[1000px] sm:h-[555px]'></iframe>
-      <h1 className='m-2 font-bold w-[99%] sm:w-[1000px]'>{snippet?.title}</h1>
-      <div className='flex flex-col sm:flex-row justify-between sm:w-[1000px]'>
+      <iframe src={"https://www.youtube.com/embed/" + searchParams.get("v") } frame-border="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-xl w-[94%] h-[230px] sm:w-[1000px] sm:h-[555px]'></iframe>
+      <h1 className='m-2 font-bold w-[93%] sm:w-[1000px]'>{snippet?.title}</h1>
+      <div className='flex flex-col sm:flex-row justify-between w-[94%]  sm:w-[1000px]'>
       <div className='flex justify-between items-center'>
       <div className='flex m-2 '>
         <img src={user} alt="user" className='h-12 -mt-3 -ml-2 w-12 font-semibold  cursor-pointer'/>
@@ -88,7 +88,7 @@ const getVideoInfo= async()=>{
           
       </div>
     </div>
-    <div className={`relative bg-gray-200 p-2 rounded-lg ${isOverflowHidden? 'h-16 p-1 overflow-hidden w-[96%] sm:w-[1000px]' : ' w-[96%]  sm:w-[1000px]'} text-sm ml-3 sm:ml-0 sm:mr-5 -z-10 `} onClick={()=> handleDivClick()}>
+    <div className={`relative bg-gray-200 p-2 rounded-lg ${isOverflowHidden? 'h-16 p-1 overflow-hidden w-[94%] sm:w-[1000px]' : ' w-[96%]  sm:w-[1000px]'} text-sm ml-3 sm:ml-0 sm:mr-5 -z-10 `} onClick={()=> handleDivClick()}>
       
     <p className=' font-semibold'>{formatViewsCount(statistics?.viewCount)} views</p>
 
