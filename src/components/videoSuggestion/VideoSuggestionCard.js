@@ -26,7 +26,7 @@ function VideoSuggestionCard({info}) {
         <div className=' py-1  cursor-pointer hover:border-radius-none flex flex-col sm:flex-row  w-[96%] sm:w-[1000px] ml-2'>
           <img
             src={thumbnails.high.url}
-            className='h-52 sm:h-28 w-[91%] sm:w-[87%] sm:max-w-48 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none'
+            className='h-52 sm:h-28 w-[92%] sm:w-[87%] sm:max-w-48 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none'
           />
           <div className=' mx-5 mt-2 mb-7'>
           <h1 className='text-md font-semibold line-clamp-2 w-[96%] sm:max-w-56'>{title}</h1>
