@@ -8,7 +8,7 @@ function SearchVideoCard({info}) {
     const { thumbnails, title, channelTitle, description}= snippet;
 
   return (
-    <div className=' mb-7 sm:mb-0'>
+    <div className=' mb-8 sm:mb-0'>
 
         <Link to={id.videoId ? ('/watch?v='+ id.videoId ) : '?q=telugusongs'} className='flex ml-4 sm:m-6 sm:ml-0 flex-col sm:flex-row items-start w-[100%]'>
         <img
