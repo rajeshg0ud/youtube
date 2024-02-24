@@ -11,10 +11,11 @@ import WatchVideoSuggestion from './videoSuggestion/WatchVideoSuggestion';
 export default function WatchVideoContainer() {
   const [videoInfo, setVideoInfo]= useState("");
   const [isOverflowHidden, setIsOverflowHidden] = useState(true);
-
   
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-
+  useEffect(()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },[]);
+  
   const handleDivClick = () => {
     setIsOverflowHidden(!isOverflowHidden);
   };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import user from '../../Images/utube.png';
 import { Link } from 'react-router-dom';
 
@@ -7,8 +7,9 @@ function SearchVideoCard({info}) {
     const {snippet, id}=info;
     const { thumbnails, title, channelTitle, description}= snippet;
 
-    
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[]);
 
   return (
     <div className=' mb-8 sm:mb-0'>
