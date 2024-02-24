@@ -8,15 +8,16 @@ function SearchVideoCard({info}) {
     const { thumbnails, title, channelTitle, description}= snippet;
 
   return (
-    <div className=' py-6 mr-3 max-w-80 sm:max-w-72 cursor-pointer hover:border-radius-none   w-[150%] sm:w-[1000px] ' >
+    <div className=' mr-3 max-w-80 sm:max-w-full cursor-pointer hover:border-radius-none ' >
+
         <Link to={id.videoId ? ('/watch?v='+ id.videoId ) : '?q=telugusongs'} className='flex m-6 flex-col sm:flex-row '>
         <img
             src={thumbnails.high.url}
-            className=' min-h-40 h-44 w-80 md:h-[162px] md:w-80 md:max-w-72 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none '
+            className='  min-h-40 h-44 w-80 sm:h-52 sm:w-96 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none ' 
           />
           <div className='ml-4 '>
             
-          <h1 className=' font-semibold text-lg text-gray-700'>{title}</h1>
+          <h1 className=' text-sm font-semibold line-clamp-2 sm:text-lg text-gray-700'>{title}</h1>
           <div className='flex items-center'>
             <img src={user} className=' h-8 '/>
             <p className=' text-sm ml-1'>{channelTitle}</p>
