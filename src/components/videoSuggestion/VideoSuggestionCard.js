@@ -23,12 +23,12 @@ function VideoSuggestionCard({info}) {
 
       return (
         <Link to={'/watch?v='+ info.id}>
-        <div className=' py-1  cursor-pointer hover:border-radius-none flex flex-col sm:flex-row  w-[99%] sm:w-[1000px] ml-2'>
+        <div className=' py-1  cursor-pointer hover:border-radius-none flex flex-col sm:flex-row  w-[96%] sm:w-[1000px] ml-2'>
           <img
             src={thumbnails.medium.url}
-            className='h-56 sm:h-28 w-[95%] sm:w-[87%] sm:max-w-48 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none'
+            className='h-52 sm:h-28 w-[95%] sm:w-[87%] sm:max-w-48 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none'
           />
-          <div className=' mx-5 my-7'>
+          <div className=' mx-5 mt-2 mb-7'>
           <h1 className='text-md font-semibold line-clamp-2 w-[96%] sm:max-w-56'>{title}</h1>
           <div className='flex sm:flex-col'>
           <p className='text-sm text-gray-600'>{channelTitle}</p>
