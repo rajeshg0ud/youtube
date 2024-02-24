@@ -10,10 +10,10 @@ function SearchVideoCard({info}) {
   return (
     <div >
 
-        <Link to={id.videoId ? ('/watch?v='+ id.videoId ) : '?q=telugusongs'} className='flex ml-4 sm:m-6 sm:ml-0 flex-col sm:flex-row items-start w-[100%]'>
+        <Link to={id.videoId ? ('/watch?v='+ id.videoId ) : '?q=telugusongs'} className='flex ml-4 sm:m-6 sm:ml-0 flex-col sm:flex-row items-start w-[100%] mb-2 sm:mb-0'>
         <img
             src={thumbnails.high.url}
-            className='  min-h-40 h-52 w-[346px] sm:h-52 sm:w-96 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none sm:mr-2' 
+            className='  min-h-40 h-52 w-[346px] sm:h-52 sm:w-96 rounded-xl object-cover transition-all duration-300 ease-in-out hover:rounded-none sm:mr-3' 
           />
           <div>
             
