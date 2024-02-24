@@ -12,7 +12,6 @@ export default function WatchVideoContainer() {
   const [videoInfo, setVideoInfo]= useState("");
   const [isOverflowHidden, setIsOverflowHidden] = useState(true);
   
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const handleDivClick = () => {
     setIsOverflowHidden(!isOverflowHidden);
@@ -35,6 +34,7 @@ const getVideoInfo= async()=>{
 
   useEffect(()=>{
     getVideoInfo();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     
   },[])
 
