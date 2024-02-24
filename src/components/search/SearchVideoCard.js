@@ -21,11 +21,11 @@ function SearchVideoCard({info}) {
           <div>
             
           <h1 className=' text-sm font-semibold line-clamp-2 sm:text-lg text-gray-700 px-2'>{title}</h1>
-          <div className='flex items-center'>
+          <div className='flex items-center px-2'>
             <img src={user} className=' h-8 '/>
             <p className=' text-sm ml-1  text-gray-700'>{channelTitle}</p>
           </div>
-          <p className=' max-w-2xl text-xs pr-2'> {description}</p>
+          <p className=' max-w-2xl text-xs px-2'> {description}</p>
           </div></Link>
           
     </div>
