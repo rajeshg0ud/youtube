@@ -12,7 +12,7 @@ function SearchVideoCard({info}) {
 
     useEffect(()=>{
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    },[searchParams.get("v")]);
+    },[searchParams.get("q")]);
 
   return (
     <div className=' mb-8 sm:mb-0'>
