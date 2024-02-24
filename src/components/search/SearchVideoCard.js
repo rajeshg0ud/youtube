@@ -7,6 +7,28 @@ function SearchVideoCard({info}) {
     const {snippet, id}=info;
     const { thumbnails, title, channelTitle, description}= snippet;
 
+    
+  const [searchParams]=useSearchParams();
+
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[searchParams.get("v")]);
+
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[searchParams.get("q")]);
+  
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[]);
+  
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
   return (
     <div className=' mb-8 sm:mb-0'>
 
