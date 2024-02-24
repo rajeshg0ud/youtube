@@ -60,13 +60,13 @@ const getVideoInfo= async()=>{
   }
  
   return (
-    <div className='flex flex-col mt-4  sm:flex-row'>
-    <div className='mx-1 sm:mx-7 mb-5 max-w-sm sm:max-w-5xl '>
-      <iframe src={"https://www.youtube.com/embed/" + searchParams.get("v") } frame-border="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-xl w-[100%] h-[230px] sm:w-[1000px] sm:h-[555px]'></iframe>
+    <div className='flex flex-col mt-4 sm:flex-row'>
+    <div className=' sm:mx-7 mb-5 max-w-sm sm:max-w-5xl '>
+      <iframe src={"https://www.youtube.com/embed/" + searchParams.get("v") } frame-border="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-xl w-[99%] h-[230px] sm:w-[1000px] sm:h-[555px]'></iframe>
       <h1 className='m-2 font-bold w-[99%] sm:w-[1000px]'>{snippet?.title}</h1>
       <div className='flex flex-col sm:flex-row justify-between sm:w-[1000px]'>
       <div className='flex justify-between items-center'>
-      <div className='flex m-2'>
+      <div className='flex m-2 '>
         <img src={user} alt="user" className='h-12 -mt-3 -ml-2 w-12 font-semibold  cursor-pointer'/>
         <h1 className=' mx-2'>{snippet?.channelTitle}</h1> 
         <p className=' h-8 p-1 px-3 border-2 mx-2 text-sm rounded-full cursor-pointer hover:bg-gray-200 hidden sm:inline'>Join</p> <p className='h-8 p-1 px-3 border-2 rounded-full text-sm mx-2 cursor-pointer hover:bg-gray-200  hidden sm:inline'>Subscribe</p>
@@ -74,7 +74,7 @@ const getVideoInfo= async()=>{
         
         <div className='flex self-center'>
         <p className='h-8 p-1 px-3 border-2 text-sm rounded-l-full cursor-pointer bg-gray-200 flex'> <AiOutlineLike size={18} className=' self-center' /> {formatViewsCount(statistics?.likeCount)}</p><p className='bg-gray-200 h-8'>|</p>
-          <p className='h-8 p-1 px-3 border-2  text-sm cursor-pointer bg-gray-200 mr-3 rounded-r-full'><AiOutlineDislike size={18} style={flippedStyle}  className=' self-end'/></p>
+          <p className='h-8 p-1 px-3 border-2  text-sm cursor-pointer bg-gray-200 sm:mr-3 rounded-r-full'><AiOutlineDislike size={18} style={flippedStyle}  className=' self-end'/></p>
         </div>
         
        
@@ -88,7 +88,7 @@ const getVideoInfo= async()=>{
           
       </div>
     </div>
-    <div className={`relative bg-gray-200 p-2 rounded-lg ${isOverflowHidden? 'h-16 p-1 overflow-hidden w-[96%] sm:w-[1000px]' : ' w-[96%]  sm:w-[1000px]'} text-sm ml-3 sm:ml-0 mr-5 -z-10 `} onClick={()=> handleDivClick()}>
+    <div className={`relative bg-gray-200 p-2 rounded-lg ${isOverflowHidden? 'h-16 p-1 overflow-hidden w-[96%] sm:w-[1000px]' : ' w-[96%]  sm:w-[1000px]'} text-sm ml-3 sm:ml-0 sm:mr-5 -z-10 `} onClick={()=> handleDivClick()}>
       
     <p className=' font-semibold'>{formatViewsCount(statistics?.viewCount)} views</p>
 
