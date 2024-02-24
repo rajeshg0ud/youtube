@@ -38,7 +38,7 @@ const getVideoInfo= async()=>{
 
   useEffect(()=>{
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  },[searchParams.get("v")]);
 
   const dispatch=useDispatch();
 
