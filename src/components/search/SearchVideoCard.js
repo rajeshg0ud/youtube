@@ -7,6 +7,9 @@ function SearchVideoCard({info}) {
     const {snippet, id}=info;
     const { thumbnails, title, channelTitle, description}= snippet;
 
+    
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
   return (
     <div className=' mb-8 sm:mb-0'>
 
@@ -20,7 +23,7 @@ function SearchVideoCard({info}) {
           <h1 className=' text-sm font-semibold line-clamp-2 sm:text-lg text-gray-700'>{title}</h1>
           <div className='flex items-center'>
             <img src={user} className=' h-8 '/>
-            <p className=' text-sm ml-1'>{channelTitle}</p>
+            <p className=' text-sm ml-1  text-gray-700'>{channelTitle}</p>
           </div>
           <p className=' max-w-2xl text-xs'> {description}</p>
           </div></Link>
