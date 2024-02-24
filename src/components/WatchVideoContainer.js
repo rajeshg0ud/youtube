@@ -39,21 +39,6 @@ const getVideoInfo= async()=>{
   
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    handleScroll(); // Scroll to top when the component mounts
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [videoInfo]); // Scroll to top when videoInfo changes
-
-
   const dispatch=useDispatch();
 
   useEffect(()=>{
