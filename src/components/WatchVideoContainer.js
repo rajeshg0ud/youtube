@@ -88,7 +88,7 @@ const getVideoInfo= async()=>{
           
       </div>
     </div>
-    <div className={`relative bg-gray-200 p-2 rounded-lg ${isOverflowHidden? 'h-16 p-1 overflow-hidden w-[94%] sm:w-[1000px]' : ' w-[96%]  sm:w-[1000px]'} text-sm ml-3 sm:ml-0 sm:mr-5 -z-10 `} onClick={()=> handleDivClick()}>
+    <div className={`relative bg-gray-200 p-2 rounded-lg ${isOverflowHidden? 'h-16 p-1 overflow-hidden w-[91%] sm:w-[1000px]' : ' w-[96%]  sm:w-[1000px]'} text-sm ml-3 sm:ml-0 sm:mr-5 -z-10 `} onClick={()=> handleDivClick()}>
       
     <p className=' font-semibold'>{formatViewsCount(statistics?.viewCount)} views</p>
 
