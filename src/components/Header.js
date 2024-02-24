@@ -29,7 +29,7 @@ function Header(){
             <img src={menu} alt="menu" className=' h-6 mx-4 mt-2 cursor-pointer  hidden sm:block' onClick={() => menuBarSet()}/>
             
             <a href='/'  alt="YouTube Home">
-            <img src={youtube} alt="youtube-icon" className='h-[21px] ml-2 mt-[10px] cursor-pointer w-[95px] max-w-[95px]'/>
+            <img src={youtube} alt="youtube-icon" className='h-[21px] -ml-1 sm:ml-2 mt-[10px] cursor-pointer w-[94px] max-w-[94px]'/>
             </a>
 
         </div>
@@ -37,8 +37,8 @@ function Header(){
         
         <div className='flex justify-center col-span-10 ' >
 
-        <form  onSubmit={handleSubmit} className='w-9/12 sm:w-6/12 flex justify-center '>
-        <input type='text' placeholder='Search' className=' w-6/12 sm:w-4/5 py-2 h-[30px] sm:h-[38px]  pl-4 border border-gray-500 rounded-l-full' onChange={(e)=>setSearchQuery(e.target.value)}/>
+        <form  onSubmit={handleSubmit} className='w-9/12 sm:w-6/12 flex justify-center'>
+        <input type='text' placeholder='Search' className=' w-4/5 sm:w-4/5 py-2 h-[30px] sm:h-[38px]  pl-4 border border-gray-500 rounded-l-full ' onChange={(e)=>setSearchQuery(e.target.value)}/>
          <button className=' px-1 border py-2 sm:px-4 border-gray-500 rounded-r-full  h-[30px] sm:h-[38px]  bg-gray-100 hover:bg-gray-200 self-center' >
         <AiOutlineSearch size={25}  className='pb-1' /></button> 
         </form>
