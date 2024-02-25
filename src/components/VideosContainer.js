@@ -28,7 +28,7 @@ const VideosContainer=()=> {
   return (
     <div className='flex flex-wrap sm:ml-3 justify-center sm:justify-normal '>
       {
-        data.map(video=>
+        data?.map(video=>
           <VideoCard info={video} key={video.id}/>
           )
       }

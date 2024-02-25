@@ -15,7 +15,7 @@ function SearchPage() {
   const [searchData, setSearchData]= useState([]);
 
   const getSearchData= async()=>{
-    const data=await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&${params}&maxResults=50&key=`+key)
+    const data=await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&${params}&maxResults=50&key=`+'AIzaSyDZ4DNSb8rLS3pyouYieoMUFr5PlhP0m08')
     const jsonData= await data.json();
     setSearchData(jsonData.items)
   }
@@ -31,7 +31,7 @@ function SearchPage() {
       
       <ButtonList />
       {
-        searchData.map((video, index)=>(
+        searchData?.map((video, index)=>(
           <SearchVideoCard info={video} key={video.id.videoId? video.id.videoId : index } />
 
         ))
