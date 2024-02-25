@@ -25,19 +25,15 @@ export default function WatchVideoContainer() {
   
 
 const getVideoInfo= async()=>{
-    const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=AIzaSyB4B9vAwe92puaMGQhM5Twlgt4KD7mVlTo`);
+    const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=AIzaSyDZ4DNSb8rLS3pyouYieoMUFr5PlhP0m08`);
 
     const jsonData= await data.json();
     setVideoInfo(jsonData.items[0]);
-
   }
 
   useEffect(()=>{
     getVideoInfo();
   },[])
-
-  
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const dispatch=useDispatch();
 

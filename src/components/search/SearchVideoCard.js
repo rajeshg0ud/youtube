@@ -7,7 +7,7 @@ function SearchVideoCard({info}) {
     const {snippet, id}=info;
     const { thumbnails, title, channelTitle, description}= snippet;
 
-    
+  
   return (
     <div className=' mb-8 sm:mb-0'>
 

@@ -8,8 +8,6 @@ function VideoSuggestionCard({info}) {
     const { thumbnails, title, channelTitle}= snippet;
     const {viewCount}=statistics;
 
-
-
     function formatViewsCount(views) {
         if (views < 1000) {
           return views.toString(); 
