@@ -40,7 +40,7 @@ export default function WatchVideoContainer() {
   
 
 const getVideoInfo= async()=>{
-    const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=${keyy}`);
+    const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=${key}`);
 
     const jsonData= await data.json();
     setVideoInfo(jsonData.items[0]);

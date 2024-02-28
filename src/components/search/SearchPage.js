@@ -15,7 +15,7 @@ function SearchPage() {
   const [searchData, setSearchData]= useState([]);
 
   const getSearchData= async()=>{
-    const data=await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&${params}&maxResults=50&key=`+ keyy)
+    const data=await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&${params}&maxResults=50&key=`+ key)
     const jsonData= await data.json();
     setSearchData(jsonData.items)
   }
