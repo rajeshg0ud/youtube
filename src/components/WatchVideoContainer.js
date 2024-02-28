@@ -6,6 +6,7 @@ import user from '../Images/utube.png'
 import { AiOutlineLike, AiOutlineDislike, AiOutlineShareAlt, AiOutlineDownload, AiOutlineSave  } from 'react-icons/ai';
 import Comments from './Comments';
 import WatchVideoSuggestion from './videoSuggestion/WatchVideoSuggestion';
+import { keyy } from '../utils/config';
 
 
 export default function WatchVideoContainer() {
@@ -21,11 +22,25 @@ export default function WatchVideoContainer() {
 /**
   const {title, channelTitle}= snippet; */
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, );
+
+
   const [searchParams]=useSearchParams();
   
 
 const getVideoInfo= async()=>{
-    const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=AIzaSyDZ4DNSb8rLS3pyouYieoMUFr5PlhP0m08`);
+    const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=${keyy}`);
 
     const jsonData= await data.json();
     setVideoInfo(jsonData.items[0]);
