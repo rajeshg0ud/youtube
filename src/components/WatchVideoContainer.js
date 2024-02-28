@@ -6,7 +6,7 @@ import user from '../Images/utube.png'
 import { AiOutlineLike, AiOutlineDislike, AiOutlineShareAlt, AiOutlineDownload, AiOutlineSave  } from 'react-icons/ai';
 import Comments from './Comments';
 import WatchVideoSuggestion from './videoSuggestion/WatchVideoSuggestion';
-import { keyy } from '../utils/config';
+import { key, keyy } from '../utils/config';
 
 
 export default function WatchVideoContainer() {
