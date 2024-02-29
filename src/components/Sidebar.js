@@ -10,7 +10,7 @@ function Sidebar() {
   return !isMenuOpen ? "": (<>
   
   <div className=' lg:mr-60 mr-0'></div>
-    <div className='hidden md:block col-span-1 shadow-lg w-48 fixed bg-white h-full p-7 mx-4 mb-4 min-h-dvh top-0 pt-20 '>
+    <div className='hidden lg:block col-span-1 shadow-lg w-48 fixed bg-white h-full p-7 mx-4 mb-4 min-h-dvh top-0 pt-20 '>
       <>
         <ul>
           <Link to="/">
