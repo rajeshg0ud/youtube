@@ -73,7 +73,7 @@ const getVideoInfo= async()=>{
   return (
     <div className='flex flex-col mt-4 sm:flex-row'>
     <div className=' sm:mx-7 mb-5 max-w-sm sm:max-w-5xl '>
-      <iframe src={"https://www.youtube.com/embed/" + searchParams.get("v") } frame-border="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-xl w-[94%] h-[230px] sm:w-[1000px] sm:h-[555px]'></iframe>
+      <iframe src={"https://www.youtube.com/embed/" + searchParams.get("v") +"?&autoplay=1&mute=1"} frame-border="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-xl w-[94%] h-[230px] sm:w-[1000px] sm:h-[555px]'></iframe>
       <h1 className='m-2 font-bold w-[93%] sm:w-[1000px]'>{snippet?.title}</h1>
       <div className='flex flex-col sm:flex-row justify-between w-[94%]  sm:w-[1000px]'>
       <div className='flex justify-between items-center'>
