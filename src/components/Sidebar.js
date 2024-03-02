@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 
 function Sidebar() {
 
-    const isMenuOpen= useSelector(store=> store.menubar.isMenuOpen)
+  const isMenuOpen= useSelector(store=> store.menubar.isMenuOpen)
 
-    
   return !isMenuOpen ? "": (<>
   
   <div className=' lg:mr-60 mr-0'></div>

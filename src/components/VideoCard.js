@@ -2,11 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const VideoCard=({info})=> {
-    
+
     const {snippet, statistics}=info;
     const { thumbnails, title, channelTitle}= snippet;
     const {viewCount}=statistics;
-
 
     function formatViewsCount(views) {
         if (views < 1000) {
@@ -17,7 +16,6 @@ const VideoCard=({info})=> {
           return (views / 1000000).toFixed(1) + 'M';
         }
       }
-    
 
       return (
         <Link to={'/watch?v='+ info.id}>
@@ -32,8 +30,7 @@ const VideoCard=({info})=> {
         </div>
         </Link>
       );
-      
-
+    
 }
 
 export default VideoCard;

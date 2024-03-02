@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 import VideoCard from './VideoCard';
 import { useDispatch } from 'react-redux';
 import { setVideoData } from '../store/homeVideos';
-import WatchVideoContainer from './WatchVideoContainer';
-
 
 const VideosContainer=()=> {
 
@@ -21,8 +19,6 @@ const VideosContainer=()=> {
     setData(jsonData.items)
     dispatch(setVideoData(jsonData.items));
     }
-
-
 
 
   return (

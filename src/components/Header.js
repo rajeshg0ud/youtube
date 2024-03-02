@@ -17,10 +17,10 @@ function Header(){
         dispatch(toggleState());
     }
 
-        const handleSubmit=(e)=>{
+    const handleSubmit=(e)=>{
             e.preventDefault();
             navigate(`/search?q=${searchQuery}`)
-        }
+    }
     
 
   return (

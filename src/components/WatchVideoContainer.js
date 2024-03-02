@@ -12,15 +12,13 @@ import { key, keyy } from '../utils/config';
 export default function WatchVideoContainer() {
   const [videoInfo, setVideoInfo]= useState("");
   const [isOverflowHidden, setIsOverflowHidden] = useState(true);
-  
 
   const handleDivClick = () => {
     setIsOverflowHidden(!isOverflowHidden);
   };
 
   const {snippet, statistics}=videoInfo;
-/**
-  const {title, channelTitle}= snippet; */
+/**const {title, channelTitle}= snippet; */
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -35,9 +33,7 @@ export default function WatchVideoContainer() {
     };
   }, );
 
-
   const [searchParams]=useSearchParams();
-  
 
 const getVideoInfo= async()=>{
     const data= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${searchParams.get("v")}&key=${key}`);
